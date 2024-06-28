@@ -4,8 +4,10 @@ require('dotenv').config()
 const userRoute = require('./routes/user')
 const mongoose = require('mongoose')
 const notRoute = require('./routes/notlar')
+const cors = require('cors')
 
 app.use(express.json())
+app.use(cors())
 
 mongoose
   .connect(process.env.MONGO_URI, {

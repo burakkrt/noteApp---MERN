@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { API_URL } from "../constant/index";
+
 // import { useAuthContext } from "./useAuthContext";
 
 export const useSingup = () => {
@@ -10,7 +12,7 @@ export const useSingup = () => {
   const singup = async (email, password) => {
     setLoading(true);
     setError(null);
-    const response = await fetch("/api/user/singup", {
+    const response = await fetch(`${API_URL}/api/user/singup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

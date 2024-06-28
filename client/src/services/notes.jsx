@@ -1,6 +1,8 @@
+import { API_URL } from "../constant";
+
 export const getNotes = async (token) => {
   try {
-    const response = await fetch("/api/notlar", {
+    const response = await fetch(`${API_URL}/api/notlar`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -16,7 +18,7 @@ export const getNotes = async (token) => {
 
 export const getNotesById = async (id, token) => {
   try {
-    const response = await fetch(`/api/notlar/${id}`, {
+    const response = await fetch(`${API_URL}/api/notlar/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -32,7 +34,7 @@ export const getNotesById = async (id, token) => {
 
 export const deleteNotesById = async (id, token) => {
   try {
-    const response = await fetch(`/api/notlar/${id}`, {
+    const response = await fetch(`${API_URL}/api/notlar/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -49,7 +51,7 @@ export const deleteNotesById = async (id, token) => {
 
 export const updateNotesById = async (id, data, token) => {
   try {
-    const response = await fetch(`/api/notlar/${id}`, {
+    const response = await fetch(`${API_URL}/api/notlar/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -68,7 +70,7 @@ export const updateNotesById = async (id, data, token) => {
 
 export const createNote = async (data, token) => {
   try {
-    const response = await fetch(`/api/notlar`, {
+    const response = await fetch(`${API_URL}/api/notlar`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
