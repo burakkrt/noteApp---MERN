@@ -94,3 +94,4 @@ ehthumbs.db
 
 # Linux
 .cache/
+.vercel
