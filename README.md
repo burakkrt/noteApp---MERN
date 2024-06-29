@@ -5,6 +5,8 @@ Kodu kopyala
 
 This is a NoteAPP project. Follow the instructions below to set up and run the project.
 
+## [Live](https://note-app-mern-lvwv5ueyz-burakkrts-projects.vercel.app)
+
 ## Prerequisites
 
 Make sure you have the following installed on your machine:
