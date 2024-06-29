@@ -43,8 +43,8 @@ Create a .env file in the root directory of the project and add the following en
 
 ```bash
 PORT=4000
-MONGO_URI='your_mongodb_uri'
-SECRET_KEY='your_secret_key'
+MONGO_URI=your_mongodb_uri
+SECRET_KEY=your_secret_key
 ```
 
 Replace 'your_mongodb_uri' and 'your_secret_key' with your actual MongoDB URI and secret key.
@@ -70,7 +70,7 @@ Environment Variables
 
 - PORT: The port number the server will run on. Default is 4000.
 - MONGO_URI: The connection string for your MongoDB database.
-- SECRET_KEY: A secret key used for various purposes such as signing tokens.
+- SECRET_KEY: A secret key used for various purposes such as signing tokens. You decide what to write here. You can write anything you want.
 
   1.2 Create client
 
@@ -85,6 +85,16 @@ If you are still in the server directory, go back and move to the client folder.
 ```bash
 cd..
 cd client
+```
+
+Create a .env file in the root directory of the project and add the following environment variables:
+
+Here we need to enter the URL address where we run our server. Since we are running it at localhost:4000 in our example, we can write this.
+
+.env file
+
+```bash
+VITE_API_URL=http://localhost:4000
 ```
 
 Install the dependencies:
