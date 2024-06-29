@@ -30,6 +30,18 @@ export default function HomeContainer() {
         <Outlet />
       </div>
       <Toaster />
+      <div className="m-2 text-start text-red-800">
+        <p>
+          TR: Bu uygulamada ücretsiz web servisi kullandığı için servis
+          iletişimleri yavaş olabilir, eğer bir loading işleminde uzun süre
+          bekliyorsanız lütfen bunu bir hata sanmayın.
+        </p>
+        <p>
+          EN: Since this application uses a free web service, the service
+          communications can be slow, if a loading process takes a long time If
+          you are waiting, please do not consider this a mistake.
+        </p>
+      </div>
       <Footer />
     </div>
   );

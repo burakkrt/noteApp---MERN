@@ -192,30 +192,6 @@ function Login() {
                     value="admin1234"
                   />
                 </div>
-                {/* <div className="flex items-center justify-between">
-                <div className="flex items-start">
-                  <div className="flex items-center h-5">
-                    <input
-                      id="remember"
-                      aria-describedby="remember"
-                      type="checkbox"
-                      className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
-                      required=""
-                    />
-                  </div>
-                  <div className="ml-3 text-sm">
-                    <label className="text-gray-500 dark:text-gray-300">
-                      Remember me
-                    </label>
-                  </div>
-                </div>
-                <a
-                  href="#"
-                  className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
-                >
-                  Forgot password?
-                </a>
-              </div> */}
                 <button
                   type="submit"
                   className="w-full text-white bg-slate-700 hover:bg-slate-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center duration-150 "
@@ -226,6 +202,18 @@ function Login() {
               </form>
             </div>
           </div>
+        </div>
+        <div className="m-2 mt-5 text-center text-slate-500">
+          <p>
+            TR: Bu uygulamada ücretsiz web servisi kullandığı için servis
+            iletişimleri yavaş olabilir, eğer bir loading işleminde uzun süre
+            bekliyorsanız lütfen bunu bir hata sanmayın.
+          </p>
+          <p>
+            EN: Since this application uses a free web service, the service
+            communications can be slow, if a loading process takes a long time
+            If you are waiting, please do not consider this a mistake.
+          </p>
         </div>
       </div>
     </section>

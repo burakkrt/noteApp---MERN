@@ -160,6 +160,18 @@ function Singup() {
             </form>
           </div>
         </div>
+        <div className="m-2 mt-5 text-center text-slate-500">
+          <p>
+            TR: Bu uygulamada ücretsiz web servisi kullandığı için servis
+            iletişimleri yavaş olabilir, eğer bir loading işleminde uzun süre
+            bekliyorsanız lütfen bunu bir hata sanmayın.
+          </p>
+          <p>
+            EN: Since this application uses a free web service, the service
+            communications can be slow, if a loading process takes a long time
+            If you are waiting, please do not consider this a mistake.
+          </p>
+        </div>
       </div>
     </section>
   );
