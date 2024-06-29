@@ -13,12 +13,12 @@ export default function HomeContainer() {
   const { dispatch } = useNotContext();
   const navigate = useNavigate();
 
+  if (!user) {
+    navigate("/login");
+  }
+
   useEffect(() => {
     dispatch({ type: "CLEAR_NOTE" });
-
-    if (!user) {
-      navigate("/login");
-    }
   }, [user, dispatch, navigate]);
 
   return (
