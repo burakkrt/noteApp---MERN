@@ -4,6 +4,32 @@ This is a NoteAPP project. Follow the instructions below to set up and run the p
 
 ## [Live](https://note-app-mern-nu.vercel.app)
 
+## Technologies
+
+### Frontend (Client)
+
+- [classnames - v2.5.1](https://www.npmjs.com/package/classnames)
+- [react - v18.2.0](https://reactjs.org/)
+- [react-helmet - v6.1.0](https://www.npmjs.com/package/react-helmet)
+- [react-hot-toast - v2.4.1](https://react-hot-toast.com/)
+- [react-icons - v5.2.1](https://react-icons.github.io/react-icons/)
+- [react-loading - v2.0.3](https://www.npmjs.com/package/react-loading)
+- [react-router-dom - v6.23.1](https://reactrouter.com/)
+- [eslint - v8.57.0](https://eslint.org/)
+- [tailwindcss - v3.4.3](https://tailwindcss.com/)
+- [vite - v5.2.0](https://vitejs.dev/)
+
+### Backend (Server)
+
+- [bcrypt - v5.1.1](https://www.npmjs.com/package/bcrypt)
+- [cors - v2.8.5](https://www.npmjs.com/package/cors)
+- [dotenv - v16.4.5](https://www.npmjs.com/package/dotenv)
+- [express - v4.19.2](https://expressjs.com/)
+- [jsonwebtoken - v9.0.2](https://www.npmjs.com/package/jsonwebtoken)
+- [mongoose - v8.4.0](https://mongoosejs.com/)
+- [validator - v13.12.0](https://www.npmjs.com/package/validator)
+- [prettier - v3.2.5](https://prettier.io/)
+
 ## Prerequisites
 
 Make sure you have the following installed on your machine:
