@@ -4,8 +4,8 @@ const Schema = mongoose.Schema
 const notSchema = new Schema(
   {
     title: {
-      type: String, // title 'in tipi
-      required: [true, 'Title must be mandatory.'], // hata olması durumudna mesaj
+      type: String,
+      required: [true, 'Title must be mandatory.'],
     },
     description: {
       type: String,
@@ -16,10 +16,8 @@ const notSchema = new Schema(
     },
   },
   {
-    timestamps: true, // zaman damgası aktif. veri ekleme ve değiştirilmesinde zamanı ekler
+    timestamps: true,
   }
 )
 
-/* model oluşturma ve dışarı aktarma işlemi. Database 'in altına yoksa
-belirtilen isimde collection oluşturur ve SONUNA OTOMATİK "S" EKLER. */
 module.exports = mongoose.model('Not', notSchema)
