@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import Header from "../pages/Header";
 import Footer from "../pages/Footer";
 import Breadcrumbs from "../components/Breadcrumbs";
@@ -11,10 +11,15 @@ import { useNotContext } from "../hooks/useNoteContext";
 export default function HomeContainer() {
   const { user } = useAuthContext();
   const { dispatch } = useNotContext();
+  const navigate = useNavigate();
 
   useEffect(() => {
     dispatch({ type: "CLEAR_NOTE" });
-  }, [user, dispatch]);
+
+    if (!user) {
+      navigate("/login");
+    }
+  }, [user, dispatch, navigate]);
 
   return (
     <div className="flex flex-col min-h-screen w-full">

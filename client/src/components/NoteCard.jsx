@@ -6,11 +6,11 @@ const NoteCard = ({ data }) => {
     const { _id, title, description, createdAt, updatedAt } = data;
     return (
       <div className="bg-neutral-200 p-5 rounded-md shadow-md">
-        <div className="flex flex-row items-center justify-between ps-2">
+        <div className="flex flex-row items-center justify-between ps-2 mb-5">
           <h3 className="font-bold">{title}</h3>
           <Link
             to={`edit/${_id}`}
-            className="text-neutral-600 hover:text-neutral-900 duration-150"
+            className="text-red-900 hover:text-neutral-900 duration-150"
             title="Edit this note"
           >
             <CiEdit className="text-2xl" />
