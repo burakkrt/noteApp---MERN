@@ -95,3 +95,5 @@ ehthumbs.db
 # Linux
 .cache/
 .vercel
+
+docker-compose.yaml

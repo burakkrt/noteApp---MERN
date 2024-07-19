@@ -10,12 +10,11 @@ app.use(express.json())
 app.use(cors())
 
 mongoose
-  .connect(process.env.MONGO_URI, {
-  })
+  .connect(process.env.MONGO_URI, {})
   .then(() => {
     console.log('Database connected')
-    app.listen(process.env.PORT || 3000, () => {
-      console.log(`Server is started on port ${process.env.PORT || 3000}`)
+    app.listen(process.env.PORT || 9001, () => {
+      console.log(`Server is started on port ${process.env.PORT || 9001}`)
     })
   })
   .catch((err) => {
